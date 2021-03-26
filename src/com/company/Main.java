@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -7,73 +8,74 @@ public class Main {
     public static void main(String[] args) {
 
 //----1 Зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та Перебрати його циклом while
-//int [] arr = {2,17,13,6,22,31,45,66,100,-18};
-//int i=0;
-//while (i<arr.length){
-//    System.out.print(arr[i] + " ");
-//    i++;
-//}
+int [] arr = {2,17,13,6,22,31,45,66,100,-18};
+int i=0;
+while (i<arr.length){
+    System.out.print(arr[i] + " ");
+    i++;
+}
 
 //----2 Зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та Перебрати його циклом for
-//        int [] arr = {2,17,13,6,22,31,45,66,100,-18};
-//        for (int i = 0; i<arr.length;i++){
-//            System.out.print(arr[i]+ " ");
-//        }
+        int [] arr1 = {2,17,13,6,22,31,45,66,100,-18};
+        for (int q = 0; q<arr1.length;q++){
+            System.out.print(arr1[q]+ " ");
+        }
 
 //-----3 Зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та: Перебрати його циклом while та вивести числа тільки з непарним індексом
-//int [] arr = {2,17,13,6,22,31,45,66,100,-18};
-//int i = 0;
-//while(i<arr.length){
-//    if (i%2==1){
-//        System.out.print(arr[i]+" ");
-//    }
-//    i++;
-//}
+int [] arr2 = {2,17,13,6,22,31,45,66,100,-18};
+int w = 0;
+while(w<arr.length){
+    if (w%2==1){
+        System.out.print(arr[w]+" ");
+    }
+    w++;
+}
 
 //----4 Зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та Перебрати його циклом for та вивести числа тільки з непарним індексом
-//        int [] arr1 = {2,17,13,6,22,31,45,66,100,-18};
-//        for (int j =0;j<arr.length;j++){
-//            if (j%2==1){
-//                System.out.print(arr1[j]+" ");
-//            }
-//        }
+        int [] arr3 = {2,17,13,6,22,31,45,66,100,-18};
+        for (int j =0;j<arr3.length;j++){
+            if (j%2==1){
+                System.out.print(arr3[j]+" ");
+            }
+        }
 
 //-----5 Зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та: Перебрати його циклом while та вивести числа тільки парні  значення
-//        int [] arr = {2,17,13,6,22,31,45,66,100,-18};
-//        int i=0;
-//        while(i<arr.length) {
-//            if (arr[i] % 2 == 0) {
-//                System.out.print(arr[i] + " ");
-//            }
-//            i++;
-//        }
+        int [] arr4 = {2,17,13,6,22,31,45,66,100,-18};
+        int e=0;
+        while(e<arr.length) {
+            if (arr4[e] % 2 == 0) {
+                System.out.print(arr4[e] + " ");
+            }
+            e++;
+        }
+
 //-----6 Зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та Перебрати його циклом for та вивести числа тільки парні значення
-//    int [] arr1 = {2,17,13,6,22,31,45,66,100,-18};
-//    for (int j = 0; j<arr1.length;j++){
-//        if (arr1[j]%2==0){
-//            System.out.print(arr1[j] + " ");
-//        }
-//    }
+    int [] arr5 = {2,17,13,6,22,31,45,66,100,-18};
+    for (int j = 0; j<arr5.length;j++){
+        if (arr5[j]%2==0){
+            System.out.print(arr5[j] + " ");
+        }
+    }
 
 //-----7 Створити пустий масив та заповнити його 50 парними числами.
-//       int [] arr = new int[50];
-//        Random r = new Random();
-//        for (int i = 0; i<arr.length;i++){
-//            arr[i] = r.nextInt(100);
-//            if (arr[i]%2==0){
-//                System.out.print(arr[i] + " ");
-//            }
-//        }
+       int [] arr6 = new int[50];
+        Random r = new Random();
+        for (int t = 0; t<arr.length;t++){
+            arr6[t] = r.nextInt(100);
+            if (arr6[t]%2==0){
+                System.out.print(arr6[t] + " ");
+            }
+        }
 
 //----8 Створити пустий масив та заповнити його 50 непарними числами.
-//       int [] arr = new int[50];
-//        Random r = new Random();
-//        for (int i=0;i<arr.length;i++){
-//            arr[i]=r.nextInt(100);
-//            if (arr[i]%2==1){
-//                System.out.print(arr[i] + " ");
-//            }
-//        }
+       int [] arr7 = new int[50];
+        Random r1 = new Random();
+        for (int y=0;y<arr.length;y++){
+            arr7[y]=r1.nextInt(100);
+            if (arr7[y]%2==1){
+                System.out.print(arr7[y] + " ");
+            }
+        }
 
 
 //9---Імітуємо роботу банкомату. Є рахунок та дії над ним
